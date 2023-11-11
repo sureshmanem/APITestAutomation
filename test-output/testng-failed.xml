@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.cognizant.restfulbooker.CreateBookingTest">
+      <class name="com.suresh.restfulbooker.DeleteBookingTest">
         <methods>
-          <include name="createBookingTest"/>
+          <include name="deleteBookingTest"/>
         </methods>
-      </class> <!-- com.cognizant.restfulbooker.CreateBookingTest -->
+      </class> <!-- com.suresh.restfulbooker.DeleteBookingTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

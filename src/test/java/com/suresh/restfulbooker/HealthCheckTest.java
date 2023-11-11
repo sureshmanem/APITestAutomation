@@ -1,4 +1,4 @@
-package com.cognizant.restfulbooker;
+package com.suresh.restfulbooker;
 
 import org.testng.annotations.Test;
 import io.restassured.*;
