@@ -38,9 +38,8 @@ public class PartialUpdateBookingTest extends BaseTest{
 		body.put("bookingdates", bookingdates);
 		body.put("additionalneeds", "Lunch");
 
-		String url = "https://restful-booker.herokuapp.com/booking";
 		Response updateResponse = RestAssured.given().auth().preemptive().basic("admin", "password123").
-				contentType(ContentType.JSON).body(body.toString()).put(url+"/"+bookingID);
+				contentType(ContentType.JSON).body(body.toString()).put("/booking/"+bookingID);
 		updateResponse.print();
 
 		
@@ -68,15 +67,6 @@ public class PartialUpdateBookingTest extends BaseTest{
 		softAssert.assertEquals(actualAdditionalneeds, "Lunch", "additionalneeds in response is not expected");
 
 		softAssert.assertAll();
-
-		// Booking ID Response
-//		String bookingid = response.jsonPath().getString("bookingid");
-//		String url1 = "https://restful-booker.herokuapp.com/booking/" + bookingid;
-//		Response response1 = RestAssured.get(url1);
-//		
-//		System.out.println("Booking Confirmation Response is " + response1.print());
-
-//		softAssert.assertAll();
 
 	}
 

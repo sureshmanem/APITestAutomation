@@ -42,15 +42,6 @@ public class CreateBookingTest extends BaseTest{
 
 		softAssert.assertAll();
 
-		// Booking ID Response
-//		String bookingid = response.jsonPath().getString("bookingid");
-//		String url1 = "https://restful-booker.herokuapp.com/booking/" + bookingid;
-//		Response response1 = RestAssured.get(url1);
-//		
-//		System.out.println("Booking Confirmation Response is " + response1.print());
-
-//		softAssert.assertAll();
-
 	}
 
 	
